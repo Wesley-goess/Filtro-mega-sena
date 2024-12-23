@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="Funil.ico" type="image/x-icon">
+    <title>Estatísticas de Múltiplos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Estatísticas de Múltiplos na Mega-Sena</h1>
+    </header>
+
+    <main>
+        <!-- Filtro de Concursos -->
+        <section>
+            <h2>Filtro de Concursos</h2>
+            <!-- Localize o formulário -->
+            <form id="filtroForm">
+            <!-- Conteúdo do formulário -->
+            <label for="inicio">Início:</label>
+            <input type="number" id="inicio" name="inicio">
+            <label for="fim">Fim:</label>
+            <input type="number" id="fim" name="fim">
+            <button type="submit">Filtrar</button>
+        </form>
+        </section>
+
+        <!-- Tabela com múltiplos por jogo -->
+        <section>
+            <h2>Múltiplos por Concurso</h2>
+            <table class="table" id="tabela-multiplos">
+                <thead>
+                    <tr>
+                        <th>Concurso</th>
+                        <th>Data</th>
+                        <th>Múltiplos de 3</th>
+                        <th>Múltiplos de 4</th>
+                        <th>Múltiplos de 5</th>
+                        <th>Múltiplos de 6</th>
+                        <th>Múltiplos de 7</th>
+                        <th>Múltiplos de 8</th>
+                        <th>Múltiplos de 9</th>
+                        <th>Múltiplos de 10</th>
+                    </tr>
+                </thead>
+                <tbody id="multiplosPorJogo">
+                    <!-- Dados serão preenchidos dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabela com totais de múltiplos -->
+        <section>
+            <h2>Totais de Ocorrências por Múltiplo</h2>
+            <table class="table" id="tabela-totais">
+                <thead>
+                    <tr>
+                        <th>Múltiplo</th>
+                        <th>Total de Ocorrências</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-totais-body">
+                    <!-- Dados serão preenchidos dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Distribuição geral de múltiplos -->
+        <section>
+            <h2>Distribuição Geral de Múltiplos</h2>
+            <table class="table" id="tabela-distribuicoes">
+                <thead>
+                    <tr>
+                        <th>Múltiplo</th>
+                        <th>Quantidade</th>
+                        <th>Ocorrências</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-distribuicoes-body">
+                    <!-- Dados serão preenchidos dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabela de Quadrados Perfeitos -->
+        <section>
+            <h2>Quadrados Perfeitos</h2>
+            <table class="table" id="tabela-quadrados-perfeitos">
+                <thead>
+                    <tr>
+                        <th>Quantidade</th>
+                        <th>Quadrados Perfeitos</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-quadrados-body">
+                    <!-- Dados serão preenchidos dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabela de Números Triangulares -->
+        <section>
+            <h2>Números Triangulares</h2>
+            <table class="table" id="tabela-numeros-triangulares">
+                <thead>
+                    <tr>
+                        <th>Quantidade</th>
+                        <th>Números Triangulares</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-triangulares-body">
+                    <!-- Dados serão preenchidos dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabela de Fibonacci -->
+        <section>
+            <h2>Fibonacci</h2>
+            <table class="table" id="tabela-fibonacci">
+                <thead>
+                    <tr>
+                        <th>Quantidade</th>
+                        <th>Fibonacci</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-fibonacci-body">
+                    <!-- Dados serão preenchidos dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabela de Números Primos -->
+        <section>
+            <h2>Números Primos</h2>
+            <table class="table" id="tabela-numeros-primos">
+                <thead>
+                    <tr>
+                        <th>Quantidade</th>
+                        <th>Números Primos</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-primos-body">
+                    <!-- Dados serão preenchidos dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
