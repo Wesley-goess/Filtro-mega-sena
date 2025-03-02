@@ -4,13 +4,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #red;
+    background-color: #blue;
     color: #333;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #4CAF50;
+    background-color: red;
     color: white;
     text-align: center;
     padding: 20px 0;
